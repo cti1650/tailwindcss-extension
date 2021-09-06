@@ -3,30 +3,32 @@
 
 # 使い方
 
-1. リポジトリをcloneする
+## 1. リポジトリをcloneする
 
 ```bash
 git clone https://github.com/cti1650/tailwindcss-extension.git
 ```
 
-2. ライブラリをインストールする
+## 2. ライブラリをインストールする
 
 ```bash
 yarn
 ```
 
-3. Chrome Extensionを作成する
+## 3. Chrome Extensionを作成する
 
 ```bash
 yarn export
 ```
 
-4. Chrome Extensionを登録する
+## 4. Chrome Extensionを登録する
 
-  a. [chrome://extensions/](chrome://extensions/)にアクセス  
-    [chrome://extensions/](chrome://extensions/)  
-  b. 拡張機能をパッケージ化  
-  c. extensionsディレクトリをアップロード  
+#### a. Chrome拡張機能ページにアクセス  
+  ```
+  chrome://extensions/
+  ```
+#### b. 拡張機能をパッケージ化  
+#### c. extensionsディレクトリをアップロード  
 
 
 # 開発について
