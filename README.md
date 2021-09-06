@@ -6,7 +6,7 @@
 1. リポジトリをcloneする
 
 ```bash
-git clone git@github.com:yushimatenjin/next-js-chrome-extension-starterkit.git
+git clone https://github.com/cti1650/tailwindcss-extension.git
 ```
 
 2. ライブラリをインストールする
