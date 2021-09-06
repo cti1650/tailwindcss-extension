@@ -24,7 +24,7 @@ yarn export
 4. Chrome Extensionを登録する
 
   a. [chrome://extensions/](chrome://extensions/)にアクセス  
-    [chrome://extensions/](chrome://extensions/)
+    [chrome://extensions/](chrome://extensions/)  
   b. 拡張機能をパッケージ化  
   c. extensionsディレクトリをアップロード  
 
