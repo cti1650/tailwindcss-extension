@@ -4651,6 +4651,18 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/build/polyfills/fetch.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/next/dist/build/polyfills/fetch.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+exports.__esModule=true;exports.default=void 0;var _default=window.fetch;exports.default=_default;
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/client/dev/dev-build-watcher.js":
 /*!****************************************************************!*\
   !*** ./node_modules/next/dist/client/dev/dev-build-watcher.js ***!
@@ -5047,7 +5059,7 @@ var _stripAnsi = _interopRequireDefault(__webpack_require__(/*! strip-ansi */ ".
 
 var _sourceMapSupport = __webpack_require__(/*! ./source-map-support */ "./node_modules/next/dist/client/dev/error-overlay/source-map-support.js");
 
-var _unfetch = _interopRequireDefault(__webpack_require__(/*! unfetch */ "./node_modules/unfetch/dist/unfetch.mjs")); // This alternative WebpackDevServer combines the functionality of:
+var _unfetch = _interopRequireDefault(__webpack_require__(/*! unfetch */ "./node_modules/next/dist/build/polyfills/fetch.js")); // This alternative WebpackDevServer combines the functionality of:
 // https://github.com/webpack/webpack-dev-server/blob/webpack-1/client/index.js
 // https://github.com/webpack/webpack/blob/webpack-1/hot/dev-server.js
 // It only supports their simplest configuration (hot updates on same server).
@@ -5119,7 +5131,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/rt/workspace/close-other-tabs/next-chrome-extension/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "D:\\vscode\\chrome_ext\\google-news-extension\\.next");
       return error;
     }
   };
@@ -5458,7 +5470,7 @@ var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-cor
 
 var _create = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/create */ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js"));
 
-var _unfetch = _interopRequireDefault(__webpack_require__(/*! unfetch */ "./node_modules/unfetch/dist/unfetch.mjs"));
+var _unfetch = _interopRequireDefault(__webpack_require__(/*! unfetch */ "./node_modules/next/dist/build/polyfills/fetch.js"));
 /* eslint-disable */
 // Improved version of https://github.com/Yaffle/EventSource/
 // Available under MIT License (MIT)
@@ -6488,7 +6500,7 @@ exports.closePing = closePing;
 exports.setupPing = setupPing;
 exports.currentPage = void 0;
 
-var _unfetch = _interopRequireDefault(__webpack_require__(/*! unfetch */ "./node_modules/unfetch/dist/unfetch.mjs"));
+var _unfetch = _interopRequireDefault(__webpack_require__(/*! unfetch */ "./node_modules/next/dist/build/polyfills/fetch.js"));
 
 var _eventsource = __webpack_require__(/*! ./error-overlay/eventsource */ "./node_modules/next/dist/client/dev/error-overlay/eventsource.js");
 /* global window, location */
@@ -6908,7 +6920,7 @@ var _inherits = __webpack_require__(/*! @babel/runtime-corejs2/helpers/inherits 
 
 var _slicedToArray = __webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js");
 
-var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
+var _interopRequireWildcard3 = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js");
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
@@ -6920,6 +6932,8 @@ exports["default"] = exports.emitter = exports.ErrorComponent = exports.router =
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js"));
 
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "./node_modules/@babel/runtime-corejs2/helpers/extends.js"));
+
+var _interopRequireWildcard2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js"));
 
 var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js"));
 
@@ -6937,7 +6951,7 @@ var _utils = __webpack_require__(/*! ../next-server/lib/utils */ "./node_modules
 
 var _pageLoader = _interopRequireDefault(__webpack_require__(/*! ./page-loader */ "./node_modules/next/dist/client/page-loader.js"));
 
-var envConfig = _interopRequireWildcard(__webpack_require__(/*! ../next-server/lib/runtime-config */ "./node_modules/next/dist/next-server/lib/runtime-config.js"));
+var envConfig = _interopRequireWildcard3(__webpack_require__(/*! ../next-server/lib/runtime-config */ "./node_modules/next/dist/next-server/lib/runtime-config.js"));
 
 var _headManagerContext = __webpack_require__(/*! ../next-server/lib/head-manager-context */ "./node_modules/next/dist/next-server/lib/head-manager-context.js");
 
@@ -6959,7 +6973,7 @@ if (!window.Promise) {
 
 var data = JSON.parse(document.getElementById('__NEXT_DATA__').textContent);
 window.__NEXT_DATA__ = data;
-var version = "9.1.2";
+var version = "9.1.3";
 exports.version = version;
 var props = data.props,
     err = data.err,
@@ -7029,8 +7043,11 @@ function (_react$default$Compon) {
   }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.scrollToHash(); // If page was exported and has a querystring
+      this.scrollToHash();
+
+      if (false) {} // If page was exported and has a querystring
       // If it's a dynamic route or has a querystring
+
 
       if (data.nextExport && ((0, _isDynamic.isDynamicRoute)(router.pathname) || location.search || data.skeleton)) {
         // update query on mount for exported pages
@@ -7173,7 +7190,10 @@ function () {
                   emitter: emitter
                 });
               }
-            });
+            }); // call init-client middleware
+
+            if (false) {}
+
             renderCtx = {
               App: App,
               Component: Component,
@@ -7184,7 +7204,7 @@ function () {
             render(renderCtx);
             return _context.abrupt("return", emitter);
 
-          case 30:
+          case 31:
           case "end":
             return _context.stop();
         }
@@ -7274,12 +7294,14 @@ function _renderError() {
             return _context3.abrupt("return", webpackHMR.reportRuntimeError(webpackHMR.prepareError(err)));
 
           case 3:
-            // Make sure we log the error to the console, otherwise users can't track down issues.
+            if (false) {} // Make sure we log the error to the console, otherwise users can't track down issues.
+
+
             console.error(err);
-            _context3.next = 6;
+            _context3.next = 7;
             return pageLoader.loadPage('/_error');
 
-          case 6:
+          case 7:
             exports.ErrorComponent = ErrorComponent = _context3.sent;
             // In production we do a normal render with the `ErrorComponent` as component.
             // If we've gotten here upon initial render, we can use the props from the server.
@@ -7299,31 +7321,31 @@ function _renderError() {
             };
 
             if (!props.props) {
-              _context3.next = 13;
+              _context3.next = 14;
               break;
             }
 
             _context3.t0 = props.props;
-            _context3.next = 16;
+            _context3.next = 17;
             break;
 
-          case 13:
-            _context3.next = 15;
+          case 14:
+            _context3.next = 16;
             return (0, _utils.loadGetInitialProps)(App, appCtx);
 
-          case 15:
+          case 16:
             _context3.t0 = _context3.sent;
 
-          case 16:
+          case 17:
             initProps = _context3.t0;
-            _context3.next = 19;
+            _context3.next = 20;
             return doRender((0, _extends2["default"])({}, props, {
               err: err,
               Component: ErrorComponent,
               props: initProps
             }));
 
-          case 19:
+          case 20:
           case "end":
             return _context3.stop();
         }
@@ -7334,20 +7356,23 @@ function _renderError() {
 }
 
 var isInitialRender = typeof _reactDom["default"].hydrate === 'function';
+var reactRoot = null;
 
 function renderReactElement(reactEl, domEl) {
   // mark start of hydrate/render
   if (_utils.SUPPORTS_PERFORMANCE_USER_TIMING) {
     performance.mark('beforeRender');
-  } // The check for `.hydrate` is there to support React alternatives like preact
+  }
 
+  if (false) { var opts, callback; } else {
+    // The check for `.hydrate` is there to support React alternatives like preact
+    if (isInitialRender) {
+      _reactDom["default"].hydrate(reactEl, domEl, markHydrateComplete);
 
-  if (isInitialRender) {
-    _reactDom["default"].hydrate(reactEl, domEl, markHydrateComplete);
-
-    isInitialRender = false;
-  } else {
-    _reactDom["default"].render(reactEl, domEl, markRenderComplete);
+      isInitialRender = false;
+    } else {
+      _reactDom["default"].render(reactEl, domEl, markRenderComplete);
+    }
   }
 
   if (onPerfEntry) {
@@ -7874,7 +7899,7 @@ function () {
 
                 if (false) {}
 
-                url = isDependency ? route : _this2.assetPrefix + "/_next/static/" + encodeURIComponent(_this2.buildId) + "/pages" + scriptRoute; // n.b. If preload is not supported, we fall back to `loadPage` which has
+                url = _this2.assetPrefix + (isDependency ? route : "/_next/static/" + encodeURIComponent(_this2.buildId) + "/pages" + scriptRoute); // n.b. If preload is not supported, we fall back to `loadPage` which has
                 // its own deduping mechanism.
 
                 if (!document.querySelector("link[rel=\"preload\"][href^=\"" + url + "\"], script[data-next-page=\"" + route + "\"]")) {
@@ -8587,7 +8612,7 @@ function () {
       // can be caused by navigating back from an external site
 
 
-      if (e.state.options && e.state.options.fromExternal) {
+      if (e.state.options && e.state.options.historyId !== _this.historyId) {
         return;
       } // If the downstream application returns falsy, return.
       // They will then be responsible for handling the event.
@@ -8642,7 +8667,9 @@ function () {
     is_dynamic_1.isDynamicRoute(pathname) && __NEXT_DATA__.nextExport ? pathname : as;
     this.sub = subscription;
     this.clc = null;
-    this._wrapApp = wrapApp;
+    this._wrapApp = wrapApp; // we use a historyId to enable ignoring invalid popstates
+
+    this.historyId = Math.random();
 
     if (true) {
       // in order for `e.state` to work on the `onpopstate` event
@@ -8652,20 +8679,6 @@ function () {
         query: query
       }), as);
       window.addEventListener('popstate', this.onPopState);
-      window.addEventListener('unload', function () {
-        // Workaround for popstate firing on initial page load when
-        // navigating back from an external site
-        if (history.state) {
-          var _history$state = history.state,
-              url = _history$state.url,
-              _as2 = _history$state.as,
-              options = _history$state.options;
-
-          _this.changeState('replaceState', url, _as2, _Object$assign({}, options, {
-            fromExternal: true
-          }));
-        }
-      });
     }
   } // @deprecated backwards compatibility even though it's a private method.
 
@@ -8882,7 +8895,9 @@ function () {
         window.history[method]({
           url: url,
           as: as,
-          options: options
+          options: _Object$assign({}, options, {
+            historyId: this.historyId
+          })
         }, null, as);
       }
     }
@@ -9173,8 +9188,7 @@ function () {
                 this.clc = cancel;
                 App = this.components['/_app'].Component;
 
-                if (!( // @ts-ignore workaround for dead-code elimination
-                (self.__HAS_SPR || "development" !== 'production') && Component.__NEXT_SPR)) {
+                if (!Component.__NEXT_SPR) {
                   _context2.next = 12;
                   break;
                 }
@@ -9448,6 +9462,7 @@ function execOnce(fn) {
   var _this = this;
 
   var used = false;
+  var result = null;
   return function () {
     if (!used) {
       used = true;
@@ -9456,8 +9471,10 @@ function execOnce(fn) {
         args[_key] = arguments[_key];
       }
 
-      fn.apply(_this, args);
+      result = fn.apply(_this, args);
     }
+
+    return result;
   };
 }
 
@@ -9500,7 +9517,7 @@ function loadGetInitialProps(_x, _x2) {
 function _loadGetInitialProps() {
   _loadGetInitialProps = _asyncToGenerator(
   /*#__PURE__*/
-  _regeneratorRuntime.mark(function _callee(Component, ctx) {
+  _regeneratorRuntime.mark(function _callee(App, ctx) {
     var message, res, props, _message;
 
     return _regeneratorRuntime.wrap(function _callee$(_context) {
@@ -9509,58 +9526,73 @@ function _loadGetInitialProps() {
           case 0:
             if (false) {}
 
-            if (!(Component.prototype && Component.prototype.getInitialProps)) {
+            if (!(App.prototype && App.prototype.getInitialProps)) {
               _context.next = 4;
               break;
             }
 
-            message = "\"".concat(getDisplayName(Component), ".getInitialProps()\" is defined as an instance method - visit https://err.sh/zeit/next.js/get-initial-props-as-an-instance-method for more information.");
+            message = "\"".concat(getDisplayName(App), ".getInitialProps()\" is defined as an instance method - visit https://err.sh/zeit/next.js/get-initial-props-as-an-instance-method for more information.");
             throw new Error(message);
 
           case 4:
             // when called from _app `ctx` is nested in `ctx`
             res = ctx.res || ctx.ctx && ctx.ctx.res;
 
-            if (Component.getInitialProps) {
-              _context.next = 7;
-              break;
-            }
-
-            return _context.abrupt("return", {});
-
-          case 7:
-            _context.next = 9;
-            return Component.getInitialProps(ctx);
-
-          case 9:
-            props = _context.sent;
-
-            if (!(res && isResSent(res))) {
+            if (App.getInitialProps) {
               _context.next = 12;
               break;
             }
 
-            return _context.abrupt("return", props);
-
-          case 12:
-            if (props) {
-              _context.next = 15;
+            if (!(ctx.ctx && ctx.Component)) {
+              _context.next = 11;
               break;
             }
 
-            _message = "\"".concat(getDisplayName(Component), ".getInitialProps()\" should resolve to an object. But found \"").concat(props, "\" instead.");
-            throw new Error(_message);
+            _context.next = 9;
+            return loadGetInitialProps(ctx.Component, ctx.ctx);
 
-          case 15:
-            if (true) {
-              if (_Object$keys(props).length === 0 && !ctx.ctx) {
-                console.warn("".concat(getDisplayName(Component), " returned an empty object from `getInitialProps`. This de-optimizes and prevents automatic static optimization. https://err.sh/zeit/next.js/empty-object-getInitialProps"));
-              }
+          case 9:
+            _context.t0 = _context.sent;
+            return _context.abrupt("return", {
+              pageProps: _context.t0
+            });
+
+          case 11:
+            return _context.abrupt("return", {});
+
+          case 12:
+            _context.next = 14;
+            return App.getInitialProps(ctx);
+
+          case 14:
+            props = _context.sent;
+
+            if (!(res && isResSent(res))) {
+              _context.next = 17;
+              break;
             }
 
             return _context.abrupt("return", props);
 
           case 17:
+            if (props) {
+              _context.next = 20;
+              break;
+            }
+
+            _message = "\"".concat(getDisplayName(App), ".getInitialProps()\" should resolve to an object. But found \"").concat(props, "\" instead.");
+            throw new Error(_message);
+
+          case 20:
+            if (true) {
+              if (_Object$keys(props).length === 0 && !ctx.ctx) {
+                console.warn("".concat(getDisplayName(App), " returned an empty object from `getInitialProps`. This de-optimizes and prevents automatic static optimization. https://err.sh/zeit/next.js/empty-object-getInitialProps"));
+              }
+            }
+
+            return _context.abrupt("return", props);
+
+          case 22:
           case "end":
             return _context.stop();
         }
@@ -11594,21 +11626,6 @@ try {
   // problems, please detail your unique predicament in a GitHub issue.
   Function("r", "regeneratorRuntime = r")(runtime);
 }
-
-
-/***/ }),
-
-/***/ "./node_modules/unfetch/dist/unfetch.mjs":
-/*!***********************************************!*\
-  !*** ./node_modules/unfetch/dist/unfetch.mjs ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (function(e,n){return n=n||{},new Promise(function(t,r){var s=new XMLHttpRequest,o=[],u=[],i={},a=function(){return{ok:2==(s.status/100|0),statusText:s.statusText,status:s.status,url:s.responseURL,text:function(){return Promise.resolve(s.responseText)},json:function(){return Promise.resolve(JSON.parse(s.responseText))},blob:function(){return Promise.resolve(new Blob([s.response]))},clone:a,headers:{keys:function(){return o},entries:function(){return u},get:function(e){return i[e.toLowerCase()]},has:function(e){return e.toLowerCase()in i}}}};for(var l in s.open(n.method||"get",e,!0),s.onload=function(){s.getAllResponseHeaders().replace(/^(.*?):[^\S\n]*([\s\S]*?)$/gm,function(e,n,t){o.push(n=n.toLowerCase()),u.push([n,t]),i[n]=i[n]?i[n]+","+t:t}),t(a())},s.onerror=r,s.withCredentials="include"==n.credentials,n.headers)s.setRequestHeader(l,n.headers[l]);s.send(n.body||null)})});
-//# sourceMappingURL=unfetch.mjs.map
 
 
 /***/ }),

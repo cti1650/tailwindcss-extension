@@ -1,9 +1,9 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Frt%2Fworkspace%2Fclose-other-tabs%2Fnext-chrome-extension%2Fpages%2Findex.tsx!./":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Frt%2Fworkspace%2Fclose-other-tabs%2Fnext-chrome-extension%2Fpages%2Findex.tsx ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=D%3A%5Cvscode%5Cchrome_ext%5Cgoogle-news-extension%5Cpages%5Cindex.tsx!./":
+/*!***********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=D%3A%5Cvscode%5Cchrome_ext%5Cgoogle-news-extension%5Cpages%5Cindex.tsx ***!
+  \***********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -45,7 +45,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_e9ad7d891b372a4221cf
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/rt/workspace/close-other-tabs/next-chrome-extension/pages/index.tsx";
+var _jsxFileName = "D:\\vscode\\chrome_ext\\google-news-extension\\pages\\index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -56,7 +56,19 @@ var Pages = function Pages() {
       lineNumber: 4
     },
     __self: this
-  }, "Hello World");
+  }, __jsx("iframe", {
+    src: "https://tailwindcss.com/docs",
+    width: "450",
+    height: "600",
+    style: {
+      borderWidth: '0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Pages);
@@ -64,13 +76,13 @@ var Pages = function Pages() {
 /***/ }),
 
 /***/ 0:
-/*!*********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Frt%2Fworkspace%2Fclose-other-tabs%2Fnext-chrome-extension%2Fpages%2Findex.tsx ***!
-  \*********************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5Cvscode%5Cchrome_ext%5Cgoogle-news-extension%5Cpages%5Cindex.tsx ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Frt%2Fworkspace%2Fclose-other-tabs%2Fnext-chrome-extension%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Frt%2Fworkspace%2Fclose-other-tabs%2Fnext-chrome-extension%2Fpages%2Findex.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5Cvscode%5Cchrome_ext%5Cgoogle-news-extension%5Cpages%5Cindex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=D%3A%5Cvscode%5Cchrome_ext%5Cgoogle-news-extension%5Cpages%5Cindex.tsx!./");
 
 
 /***/ }),
