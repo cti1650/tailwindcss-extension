@@ -9,10 +9,10 @@
     "start": "next start",
     "build": "next build",
     "export": "next build && next export -o extensions/dist && yarn patch",
-    "zip": "python3 scripts/tools/zip.py",
-    "major": "python3 scripts/update/major.py",
-    "minor": "python3 scripts/update/minor.py",
-    "patch": "python3 scripts/update/patch.py"
+    "zip": "python3 scripts/main.py zip",
+    "major": "python3 scripts/main.py major",
+    "minor": "python3 scripts/main.py minor",
+    "patch": "python3 scripts/main.py patch"
   },
   "devDependencies": {
     "@types/node": "^12.12.7",
