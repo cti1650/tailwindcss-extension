@@ -1,7 +1,7 @@
 {
   "name": "Tailwindcss Extension",
   "description": "Tailwindcss Extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "browser_action": {
     "default_popup": "./dist/index.html"
   },
@@ -10,6 +10,6 @@
     "48": "icons/favicon-32x32.png",
     "180": "icons/apple-touch-icon.png"
   },
-  "permissions": ["bookmarks", "tabs", "activeTab"],
+  "permissions": [],
   "manifest_version": 2
 }
