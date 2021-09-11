@@ -72,6 +72,8 @@ def setting_version(version_str, key):
 
 def update(key):
     json = load_manifest()
+    if 'version' not in json:
+        json["version"] = "0.0.1"
     json['version'] = setting_version(json['version'], key)
     save_manifest(json)
 
@@ -91,6 +93,8 @@ def iconResizeDataSave(img, size=128):
             str(size) + "x" + str(size) + ".png"
         json = data["json"]
         resize_img.save(img_path)
+        if 'icons' not in json:
+            json["icons"] = {}
         json["icons"][str(size)] = baseName + "-" + \
             str(size) + "x" + str(size) + ".png"
         save_manifest(json)
