@@ -12,15 +12,16 @@ current_path = 'extensions'
 
 
 def manifest_data():
-    file = glob.glob('**/manifest.json')
+    file = glob.glob('**/manifest.json', recursive=True)
+    print(file)
     if file:
-        with open(file[0]) as f:
+        with open(file[0], encoding='utf-8') as f:
             d_update = json.load(f, object_pairs_hook=OrderedDict)
         return {
             "fullpath": file[0],
             "path": os.path.relpath(file[0]).replace(os.path.basename(file[0]), ''),
             "name": os.path.basename(file[0]),
-            "dirname": os.path.dirname(file[0]),
+            "dirname": os.path.basename(os.path.dirname(file[0])),
             "json": d_update
         }
     else:
@@ -34,14 +35,14 @@ def manifest_data():
 
 
 def load_manifest():
-    with open(manifest_data()["fullpath"]) as f:
-        d_update = json.load(f, object_pairs_hook=OrderedDict)
+    with open(manifest_data()["fullpath"], encoding='utf-8') as f:
+        d_update = json.load(f, "utf-8", object_pairs_hook=OrderedDict)
     return d_update
 
 
 def save_manifest(dic):
     with open(manifest_data()["fullpath"], 'w') as f:
-        json.dump(dic, f, indent=2, ensure_ascii=False)
+        json.dump(dic, f, indent=2, encoding='utf8', ensure_ascii=False)
 
 
 def setting_version(version_str, key):
