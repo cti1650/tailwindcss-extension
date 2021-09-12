@@ -36,13 +36,13 @@ def manifest_data():
 
 def load_manifest():
     with open(manifest_data()["fullpath"], encoding='utf-8') as f:
-        d_update = json.load(f, "utf-8", object_pairs_hook=OrderedDict)
+        d_update = json.load(f, object_pairs_hook=OrderedDict)
     return d_update
 
 
 def save_manifest(dic):
-    with open(manifest_data()["fullpath"], 'w') as f:
-        json.dump(dic, f, indent=2, encoding='utf8', ensure_ascii=False)
+    with open(manifest_data()["fullpath"], 'w', encoding='utf-8') as f:
+        json.dump(dic, f, indent=2, ensure_ascii=False)
 
 
 def setting_version(version_str, key):
