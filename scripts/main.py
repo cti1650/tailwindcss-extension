@@ -84,6 +84,28 @@ def zip():
         'zip_' + data["dirname"], 'zip', root_dir=data["path"]))
 
 
+def setIconUrl(json, size, url):
+    if 'icons' not in json:
+        json["icons"] = {}
+    json["icons"][str(size)] = url
+    if size == 19:
+        if json["manifest_version"] == 2:
+            if 'browser_action' in json:
+                if 'default_icon' not in json["browser_action"]:
+                    json["browser_action"]["default_icon"] = {}
+                json["browser_action"]["default_icon"][str(size)] = url
+            if 'page_action' in json:
+                if 'default_icon' not in json["page_action"]:
+                    json["page_action"]["default_icon"] = {}
+                json["page_action"]["default_icon"][str(size)] = url
+        if json["manifest_version"] == 3:
+            if 'action' in json:
+                if 'default_icon' not in json["action"]:
+                    json["action"]["default_icon"] = {}
+                json["action"]["default_icon"][str(size)] = url
+    return json
+
+
 def iconResizeDataSave(img, size=128):
     baseName = "/icons/icon"
     if img:
@@ -93,10 +115,8 @@ def iconResizeDataSave(img, size=128):
             str(size) + "x" + str(size) + ".png"
         json = data["json"]
         resize_img.save(img_path)
-        if 'icons' not in json:
-            json["icons"] = {}
-        json["icons"][str(size)] = baseName + "-" + \
-            str(size) + "x" + str(size) + ".png"
+        setIconUrl(json, size, baseName + "-" +
+                   str(size) + "x" + str(size) + ".png")
         save_manifest(json)
 
 
