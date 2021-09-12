@@ -42,10 +42,21 @@ yarn export
 yarn export
 ```
 
-## 2. 拡張機能のZIP化
+## 2. 各オプション機能の実行
+
+#### a. 拡張機能のZIP化
 
 ```bash
 yarn zip
+```
+
+#### b. 拡張機能用アイコンの自動生成
+
+manifest.jsonと同一階層にicons/icon.pngファイル(サイズ128px以上)を格納してから以下のコマンドを実行してください。  
+実行すると各サイズ(16px,19px,48px,128px)のアイコン生成とmanifest.jsonへのパス設定を自動的に行います！
+
+```bash
+yarn mkicon
 ```
 
 ## 3. 拡張機能のバージョン管理
