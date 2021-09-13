@@ -1,7 +1,7 @@
 {
   "name": "Tailwindcss Extension",
   "description": "Tailwindcss Extension",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "browser_action": {
     "default_popup": "./dist/index.html"
   },
@@ -12,8 +12,12 @@
     "19": "/icons/icon-19x19.png"
   },
   "background": {
-    "scripts": ["js/background.js"]
+    "scripts": [
+      "js/background.js"
+    ]
   },
-  "permissions": ["tabs", "contextMenus"],
+  "permissions": [
+    "contextMenus"
+  ],
   "manifest_version": 2
 }
