@@ -1,7 +1,7 @@
 {
   "name": "Tailwindcss Extension",
   "description": "Tailwindcss Extension",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "browser_action": {
     "default_popup": "./dist/index.html"
   },
