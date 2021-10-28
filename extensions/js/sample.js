@@ -23,7 +23,8 @@
     const ele = document.createElement('button');
     ele.className = "addCopyButton border border-gray-200 bg-gray-100 text-gray-500 ml-2 px-2 py-0.5 rounded focus:outline-none"
     ele.innerText = "copy";
-    ele.value = item.textContent
+    ele.title = item.textContent;
+    ele.value = item.textContent;
     ele.addEventListener('click',(e)=>{
       execCopy(e.target.value);
     });
